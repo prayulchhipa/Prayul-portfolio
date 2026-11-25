@@ -6,14 +6,14 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  title: "Prayul Bolya — Senior FlutterFlow Developer & Team Lead",
+  title: "Prayul Bolya — Software Engineer · FlutterFlow & Flutter",
   description:
-    "Senior FlutterFlow Developer & Team Lead: 4+ years, 35+ apps on the App Store and Google Play. Firebase & Supabase backends, OpenAI & Claude, ICICI Bank. Download my CV.",
-  keywords: ["Prayul Bolya", "Senior FlutterFlow Developer", "Flutter Developer", "FlutterFlow Developer", "Enterprise FlutterFlow", "Mobile App Developer", "AI Apps", "Jaipur"],
+    "Software Engineer (FlutterFlow, Flutter, Firebase, Supabase, AI): 4+ years, 40 apps, ICICI Bank journeys used by millions daily. Team lead. Download my CV.",
+  keywords: ["Prayul Bolya", "Flutter Developer", "FlutterFlow Developer", "Enterprise FlutterFlow", "Mobile App Developer", "AI Apps", "Jaipur"],
   authors: [{ name: "Prayul Bolya" }],
   openGraph: {
-    title: "Prayul Bolya — Senior FlutterFlow Developer & Team Lead",
-    description: "35+ apps · Team Lead · OpenAI & Claude · Enterprise banking for ICICI Bank. Download my CV.",
+    title: "Prayul Bolya — Software Engineer · FlutterFlow & Flutter",
+    description: "40 apps · ICICI Bank journeys used by millions daily · OpenAI & Claude · Team lead. Download my CV.",
     type: "website",
   },
 };

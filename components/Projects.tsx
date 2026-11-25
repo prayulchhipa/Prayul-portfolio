@@ -15,7 +15,6 @@ function Card({ p }: { p: Project }) {
         </div>
       </div>
       <p className="pcard-desc">{p.desc}</p>
-      {p.role && <p className="role"><b>My role:</b> {p.role}</p>}
       <div className="chips">
         {p.tags.map((t) => <span key={t} className="chip">{t}</span>)}
       </div>

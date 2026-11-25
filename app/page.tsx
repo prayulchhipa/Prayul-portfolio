@@ -9,7 +9,7 @@ import {
 } from "@/data/resume";
 
 const featured = projects.filter((p) => p.featured);
-const mailto = `mailto:${profile.email}?subject=${encodeURIComponent("Opportunity for Prayul Bolya — Senior FlutterFlow Developer")}`;
+const mailto = `mailto:${profile.email}?subject=${encodeURIComponent("Opportunity for Prayul Bolya — FlutterFlow / Flutter Engineer")}`;
 const whatsapp = `https://wa.me/${profile.phoneRaw}?text=${encodeURIComponent("Hi Prayul, I saw your portfolio and would like to talk about an opportunity.")}`;
 
 function SectionHead({ kicker, title, sub }: { kicker: string; title: React.ReactNode; sub?: string }) {
@@ -49,9 +49,9 @@ export default function Home() {
             </Reveal>
             <Reveal delay={220}>
               <p className="hero-sub">
-                Senior FlutterFlow Developer & Team Lead with <b>4+ years</b> and <b>35+ mobile & web apps</b> shipped to the{" "}
+                Software Engineer with <b>4+ years</b> and <b>40 mobile & web apps</b> in FlutterFlow, Enterprise FlutterFlow and Flutter, shipped to the{" "}
                 <b>App Store and Google Play</b>. I lead a team of 4–6, build the Firebase / Supabase
-                backend behind every app, integrate <b>OpenAI & Claude</b>, and built customer-service flows for <b>ICICI Bank</b>.
+                backends, integrate <b>OpenAI & Claude</b>, and built <b>ICICI Bank</b> journeys used by <b>millions of customers every day</b>.
               </p>
             </Reveal>
             <Reveal delay={280} className="hero-cta">
@@ -83,12 +83,12 @@ export default function Home() {
                   <span className="avatar">PB</span>
                   <div>
                     <div className="app-name">{profile.name}</div>
-                    <div className="app-small">Senior FlutterFlow Dev</div>
+                    <div className="app-small">Software Engineer</div>
                   </div>
                 </div>
                 <div className="app-card glow">
                   <div className="app-small">Apps delivered</div>
-                  <div className="app-big">35+</div>
+                  <div className="app-big">40</div>
                   <div className="bars">{[40, 65, 50, 80, 70, 95, 88].map((h, i) => <span key={i} style={{ height: `${h}%`, animationDelay: `${i * 0.1}s` }} />)}</div>
                 </div>
                 <div className="app-row">
@@ -197,7 +197,7 @@ export default function Home() {
           <SectionHead
             kicker="Featured work"
             title={<>Products I&apos;m <span className="grad">proud of</span></>}
-            sub={`Highlights from ${projects.length} projects — with the part I owned on each.`}
+            sub={`Highlights from the ${profile.appsDelivered} apps I have delivered.`}
           />
           <div className="featured">
             {featured.map((p, i) => (
@@ -212,7 +212,6 @@ export default function Home() {
                     <h3>{p.name}</h3>
                     <p className="pcard-tag">{p.tagline}</p>
                     <p className="fcard-desc">{p.desc}</p>
-                    {p.role && <p className="role"><b>My role:</b> {p.role}</p>}
                     <div className="chips">{p.tags.map((t) => <span key={t} className="chip">{t}</span>)}</div>
                     <StoreLinks links={p.links} />
                   </div>
@@ -266,7 +265,7 @@ export default function Home() {
           <Reveal className="cta">
             <div className="cta-glow" aria-hidden />
             <span className="kicker">Let&apos;s work together</span>
-            <h2>Looking for a Senior FlutterFlow developer <br />who <span className="grad">delivers</span>?</h2>
+            <h2>Looking for a FlutterFlow / Flutter engineer <br />who <span className="grad">delivers</span>?</h2>
             <p className="muted">
               I&apos;m open to full-time roles, contract work and remote opportunities. Grab my CV or reach out — I usually reply within a day.
             </p>
