@@ -49,8 +49,8 @@ export default function Home() {
             </Reveal>
             <Reveal delay={220}>
               <p className="hero-sub">
-                Senior FlutterFlow Developer & Team Lead with <b>4+ years</b> and <b>35+ mobile & web apps</b> —{" "}
-                <b>10 live on the App Store and Google Play</b>. I lead a team of 4–6, build the Firebase / Supabase
+                Senior FlutterFlow Developer & Team Lead with <b>4+ years</b> and <b>35+ mobile & web apps</b> shipped to the{" "}
+                <b>App Store and Google Play</b>. I lead a team of 4–6, build the Firebase / Supabase
                 backend behind every app, integrate <b>OpenAI & Claude</b>, and built customer-service flows for <b>ICICI Bank</b>.
               </p>
             </Reveal>
@@ -87,7 +87,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="app-card glow">
-                  <div className="app-small">Apps delivered · 10 live</div>
+                  <div className="app-small">Apps delivered</div>
                   <div className="app-big">35+</div>
                   <div className="bars">{[40, 65, 50, 80, 70, 95, 88].map((h, i) => <span key={i} style={{ height: `${h}%`, animationDelay: `${i * 0.1}s` }} />)}</div>
                 </div>
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="stats">
             {stats.map((s, i) => (
               <Reveal key={s.label} delay={i * 80} className="stat">
-                <div className="stat-num grad"><Counter value={s.value} suffix={s.suffix} decimals={s.decimals} /></div>
+                <div className="stat-num grad"><Counter value={s.value} prefix={s.prefix} suffix={s.suffix} decimals={s.decimals} /></div>
                 <div className="stat-label">{s.label}</div>
               </Reveal>
             ))}
@@ -222,7 +222,7 @@ export default function Home() {
           </div>
 
           <Reveal className="shead sub">
-            <span className="kicker live-k"><span className="dot" /> Live right now</span>
+            <span className="kicker">Try them yourself</span>
             <h3 className="h3big">Download my apps from the stores</h3>
             <p className="muted">Real, published products — tap to open them on Google Play, the App Store or the web.</p>
           </Reveal>

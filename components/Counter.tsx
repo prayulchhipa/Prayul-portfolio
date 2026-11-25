@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-export default function Counter({ value, suffix = "", decimals = 0 }: { value: number; suffix?: string; decimals?: number }) {
+export default function Counter({ value, prefix = "", suffix = "", decimals = 0 }: { value: number; prefix?: string; suffix?: string; decimals?: number }) {
   const [n, setN] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -22,5 +22,5 @@ export default function Counter({ value, suffix = "", decimals = 0 }: { value: n
     io.observe(el);
     return () => io.disconnect();
   }, [value]);
-  return <span ref={ref}>{n.toFixed(decimals)}{suffix}</span>;
+  return <span ref={ref}>{prefix}{n.toFixed(decimals)}{suffix}</span>;
 }

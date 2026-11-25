@@ -10,7 +10,7 @@ function Card({ p }: { p: Project }) {
       <div className="pcard-top">
         <span className="pcard-icon">{p.icon}</span>
         <div>
-          <h4>{p.name} {p.links?.length ? <span className="live-dot" title="Live">LIVE</span> : null}</h4>
+          <h4>{p.name}</h4>
           <p className="pcard-tag">{p.tagline}</p>
         </div>
       </div>

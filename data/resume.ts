@@ -20,7 +20,7 @@ export const profile = {
 export const stats = [
   { value: 4, suffix: "+", label: "Years experience" },
   { value: 35, suffix: "+", label: "Mobile & web apps delivered" },
-  { value: 10, suffix: "", label: "Apps live on App Store & Play" },
+  { value: 6, prefix: "4–", suffix: "", label: "Developers led in my team" },
   { value: 9.9, suffix: "", label: "MCA CGPA", decimals: 1 },
 ];
 
@@ -28,7 +28,7 @@ export const whyHire = [
   {
     icon: "🚀",
     title: "Ships to the stores",
-    text: "35+ apps delivered and 10 live on the App Store and Google Play — CI/CD, code signing, versioning and submissions handled.",
+    text: "35+ apps delivered to the App Store and Google Play — CI/CD, code signing, versioning and submissions handled.",
   },
   {
     icon: "🧭",
@@ -69,7 +69,7 @@ export const experience = [
       ["Multi-project delivery", "Run 4–6 projects in parallel, planning sprints and priorities in JIRA and coordinating designers, QA and developers."],
       ["Backend development", "Built the backend for every project: database design, auth, Firebase Cloud Functions & Security Rules, Supabase PostgreSQL, RPC, Edge Functions and RLS."],
       ["AI & integrations", "OpenAI and Claude for image valuation, defect severity analysis and companions, plus Stripe, Razorpay, RevenueCat, Gmail, openFDA, WooCommerce, maps and NFC."],
-      ["Release management", "Set up CI/CD, managed Android and iOS code signing, versioning and store submissions — shipping 10 apps to the App Store and Google Play."],
+      ["Release management", "Set up CI/CD, managed Android and iOS code signing, versioning and store submissions for the App Store and Google Play."],
       ["Enterprise", "Consultant for ICICI Bank, building core customer-service flows in Enterprise FlutterFlow for mobile and webview."],
       ["Quality & performance", "Reduced build size and load times, fixed memory leaks, secured API keys with JWT and HTTPS, and tracked KPIs with Firebase and Google Analytics."],
     ],
@@ -112,7 +112,6 @@ export const marquee = [
 ];
 
 export type Category =
-  | "Live"
   | "AI"
   | "FinTech & Enterprise"
   | "Commerce"
@@ -150,10 +149,10 @@ export const projects: Project[] = [
     desc: "Hop-On Hop-Off tourism platform for Nepal's capital. Tourists book bus seats, follow the bus live on its route, and explore landmarks with an AI travel assistant and multilingual audio guides.",
     role: "Built the backend for reservations, live bus tracking and the AI assistant.",
     tags: ["Live Tracking", "AI Assistant", "Booking", "Multilingual Audio"],
-    cats: ["Live", "Travel & Real-time", "AI"],
+    cats: ["Travel & Real-time", "AI"],
     links: [play("com.mycompany.kathmandusightseeing")],
     featured: true,
-    badge: "Live on Google Play",
+    badge: "On Google Play",
     icon: "🚌",
     hue: 200,
   },
@@ -175,10 +174,10 @@ export const projects: Project[] = [
     desc: "Users list what they have and what they want, browse listings and propose trades. AI assesses each item's photos and condition to estimate a fair value.",
     role: "Built the backend for listings, trade matching and the OpenAI / Claude valuation pipeline.",
     tags: ["OpenAI", "Claude", "AI Valuation", "Marketplace"],
-    cats: ["Live", "AI", "Commerce"],
+    cats: ["AI", "Commerce"],
     links: [play("com.app.trytribes")],
     featured: true,
-    badge: "Live · AI-powered",
+    badge: "AI-powered",
     icon: "🔄",
     hue: 280,
   },
@@ -188,10 +187,10 @@ export const projects: Project[] = [
     desc: "Scans the user's palm to identify strengths and weaknesses, then delivers personalised guidance, daily action steps and goal tracking.",
     role: "Designed the UI and built the backend for palm-scan analysis, guidance content and progress tracking.",
     tags: ["AI Vision", "UI Design", "Goal Tracking"],
-    cats: ["Live", "AI", "Health & Fitness"],
+    cats: ["AI", "Health & Fitness"],
     links: [play("com.aumadi.palmist")],
     featured: true,
-    badge: "Live · Designed & built",
+    badge: "Designed & built",
     icon: "✋",
     hue: 320,
   },
@@ -201,10 +200,10 @@ export const projects: Project[] = [
     desc: "Connects venues, musicians and fans. Venues post gigs, musicians apply and perform, fans follow artists, and an admin panel oversees users and gigs.",
     role: "Built the backend for three user roles, gig management and the admin panel.",
     tags: ["3 User Roles", "Marketplace", "Admin Panel"],
-    cats: ["Live", "Commerce", "Social & Community"],
+    cats: ["Commerce", "Social & Community"],
     links: [ios("https://apps.apple.com/us/app/chrd/id6753981357")],
     featured: true,
-    badge: "Live on App Store",
+    badge: "On the App Store",
     icon: "🎸",
     hue: 265,
   },
@@ -230,13 +229,13 @@ export const projects: Project[] = [
   { name: "Homecrew", tagline: "Construction · Web + mobile", desc: "Coordinator web app and subcontractor mobile app for work and material orders, photo-based progress tracking, status updates, and 1-to-1 and group chat.", role: "Built the backend for orders, progress tracking and real-time chat.", tags: ["Web + Mobile", "Real-time Chat", "Orders"], cats: ["Web Apps", "Productivity"], icon: "🏗️", hue: 30 },
 
   // ---------- Other live projects ----------
-  { name: "Vinyo", tagline: "Wine education · Community", desc: "Inclusive wine-education app with courses, quizzes, tasting notes, event listings and cellar management.", tags: ["Courses", "Quizzes"], cats: ["Live", "Education", "Social & Community"], links: [ios("https://apps.apple.com/us/app/vinyo-unlock-your-inner-somm/id6504428243"), play("app.vinyo")], icon: "🍷", hue: 345 },
-  { name: "Jiver Jinx", tagline: "Education · Wellbeing", desc: "Helps schools combat bullying and support students' mental health with resources and tools for educators and students.", tags: ["EdTech", "Wellbeing"], cats: ["Live", "Education"], links: [ios("https://apps.apple.com/in/app/jiver-jinx-empower-the-youth/id6450262584"), play("com.jiverjinx")], icon: "🫶", hue: 300 },
-  { name: "GA Demands", tagline: "Diamond demand app", desc: "Demand app for the diamond trade, live on both the App Store and Google Play.", tags: ["B2B", "iOS + Android"], cats: ["Live", "Commerce"], links: [ios("https://apps.apple.com/us/app/ga-demands-diamond-demand-app/id1623581024"), play("com.flutterflow.demandapp")], icon: "💎", hue: 190 },
-  { name: "Digi SteelYard", tagline: "B2B · Market data", desc: "Real-time steel market prices, trends and product details, plus networking between suppliers and buyers.", tags: ["Real-time", "B2B"], cats: ["Live", "Commerce"], links: [play("com.mycompany.steelyardindia")], icon: "🏭", hue: 215 },
-  { name: "Sahu Patrika", tagline: "Matrimony · Subscriptions", desc: "Matrimonial app with profile search, filters and connections, plus an admin panel for users and subscriptions.", tags: ["Subscriptions", "Admin Panel"], cats: ["Live", "Social & Community"], links: [play("com.sahupatrika.app")], icon: "💍", hue: 350 },
-  { name: "Colma Care", tagline: "Subscriptions · Service requests", desc: "Paint-repair service app: per-property subscriptions and damage-repair requests tracked to resolution.", tags: ["Subscriptions", "Ticketing"], cats: ["Live", "Productivity"], links: [ios("https://apps.apple.com/us/app/colma-care/id6837059591")], icon: "🎨", hue: 15 },
-  { name: "Medtimes", tagline: "Web", desc: "Web platform, live at medtimes.co.", tags: ["Web"], cats: ["Live", "Web Apps", "Health & Fitness"], links: [{ type: "web", url: "https://medtimes.co/" }], icon: "🩺", hue: 170 },
+  { name: "Vinyo", tagline: "Wine education · Community", desc: "Inclusive wine-education app with courses, quizzes, tasting notes, event listings and cellar management.", tags: ["Courses", "Quizzes"], cats: ["Education", "Social & Community"], links: [ios("https://apps.apple.com/us/app/vinyo-unlock-your-inner-somm/id6504428243"), play("app.vinyo")], icon: "🍷", hue: 345 },
+  { name: "Jiver Jinx", tagline: "Education · Wellbeing", desc: "Helps schools combat bullying and support students' mental health with resources and tools for educators and students.", tags: ["EdTech", "Wellbeing"], cats: ["Education"], links: [ios("https://apps.apple.com/in/app/jiver-jinx-empower-the-youth/id6450262584"), play("com.jiverjinx")], icon: "🫶", hue: 300 },
+  { name: "GA Demands", tagline: "Diamond demand app", desc: "Demand app for the diamond trade, available on the App Store and Google Play.", tags: ["B2B", "iOS + Android"], cats: ["Commerce"], links: [ios("https://apps.apple.com/us/app/ga-demands-diamond-demand-app/id1623581024"), play("com.flutterflow.demandapp")], icon: "💎", hue: 190 },
+  { name: "Digi SteelYard", tagline: "B2B · Market data", desc: "Real-time steel market prices, trends and product details, plus networking between suppliers and buyers.", tags: ["Real-time", "B2B"], cats: ["Commerce"], links: [play("com.mycompany.steelyardindia")], icon: "🏭", hue: 215 },
+  { name: "Sahu Patrika", tagline: "Matrimony · Subscriptions", desc: "Matrimonial app with profile search, filters and connections, plus an admin panel for users and subscriptions.", tags: ["Subscriptions", "Admin Panel"], cats: ["Social & Community"], links: [play("com.sahupatrika.app")], icon: "💍", hue: 350 },
+  { name: "Colma Care", tagline: "Subscriptions · Service requests", desc: "Paint-repair service app: per-property subscriptions and damage-repair requests tracked to resolution.", tags: ["Subscriptions", "Ticketing"], cats: ["Productivity"], links: [ios("https://apps.apple.com/us/app/colma-care/id6837059591")], icon: "🎨", hue: 15 },
+  { name: "Medtimes", tagline: "Web", desc: "Web platform at medtimes.co.", tags: ["Web"], cats: ["Web Apps", "Health & Fitness"], links: [{ type: "web", url: "https://medtimes.co/" }], icon: "🩺", hue: 170 },
 
   // ---------- Also built ----------
   { name: "Held", tagline: "AI companion", desc: "Social companion app where users chat with an AI companion that acts as a supportive friend.", tags: ["Conversational AI", "Chat"], cats: ["AI", "Social & Community"], icon: "💬", hue: 340 },
@@ -261,5 +260,5 @@ export const projects: Project[] = [
 export const liveApps = projects.filter((p) => p.links?.length);
 
 export const categories: ("All" | Category)[] = [
-  "All", "Live", "AI", "FinTech & Enterprise", "Commerce", "Health & Fitness", "Social & Community", "Travel & Real-time", "Productivity", "Education", "Web Apps",
+  "All", "AI", "FinTech & Enterprise", "Commerce", "Health & Fitness", "Social & Community", "Travel & Real-time", "Productivity", "Education", "Web Apps",
 ];
